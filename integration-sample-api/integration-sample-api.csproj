@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>integration_sample_api</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\integration-sample-cross-cutting\integration-sample-cross-cutting.csproj" />
+    <ProjectReference Include="..\integration-sample-domains\integration-sample-domains.csproj" />
+    <ProjectReference Include="..\integration-sample-infra\integration-sample-infra.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>integration_sample_cross_cutting</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.10" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\integration-sample-application\integration-sample-application.csproj" />
+    <ProjectReference Include="..\integration-sample-domain-services\integration-sample-domain-services.csproj" />
+    <ProjectReference Include="..\integration-sample-domains\integration-sample-domains.csproj" />
+    <ProjectReference Include="..\integration-sample-infra\integration-sample-infra.csproj" />
+  </ItemGroup>
+
+</Project>
